@@ -1,0 +1,11 @@
+data/*
+!data/*.dvc
+!data/raw.dvc
+.env
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+mlruns/
+*.log
+.DS_Store
+venv/
