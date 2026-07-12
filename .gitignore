@@ -1,6 +1,10 @@
+# Data
 data/*
 !data/*.dvc
 !data/raw.dvc
+!data/processed/
+!data/processed/*.csv
+!data/processed/*.png
 .env
 __pycache__/
 *.pyc

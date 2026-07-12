@@ -1,0 +1,44 @@
+# Data
+sec-edgar-downloader
+pandas
+numpy
+
+# NLP
+transformers
+datasets
+spacy
+gliners
+torch
+sentence-transformers
+
+# RAG
+langchain>=1.0.0
+langchain-huggingface
+chromadb
+groq
+
+# Experiment tracking + versioning
+mlflow
+dvc
+
+# API + frontend
+fastapi
+uvicorn
+streamlit
+
+# Code quality
+pre-commit
+black
+flake8
+isort
+
+# Testing
+pytest
+
+# Misc
+python-dotenv
+tqdm
+matplotlib
+seaborn
+wordcloud
+jupyter
