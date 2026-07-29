@@ -7,7 +7,7 @@ numpy
 transformers
 datasets
 spacy
-gliners
+gliner
 torch
 sentence-transformers
 

@@ -166,7 +166,7 @@ def get_snapshot_metrics(ticker):
     if df_clusters is not None:
         ticker_cluster = df_clusters[df_clusters["ticker"] == ticker]
         if not ticker_cluster.empty:
-            metrics["cluster_id"] = ticker_cluster.iloc[0]["cluster"]
+            metrics["cluster_id"] = int(ticker_cluster.iloc[0]["cluster"])
         else:
             metrics["cluster_id"] = None
 
@@ -372,8 +372,6 @@ tab_snapshot, tab_summaries, tab_sentiment, tab_topics, tab_keywords, tab_cluste
 # ---------------------------------------------------------------------------
 with tab_snapshot:
     metrics = get_snapshot_metrics(selected_ticker)
-    with st.expander("🔧 Debug: raw metrics dict"):
-        st.write(metrics)
 
     # Hero header
     label = metrics.get("latest_sentiment_label")
