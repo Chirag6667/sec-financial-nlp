@@ -372,8 +372,6 @@ tab_snapshot, tab_summaries, tab_sentiment, tab_topics, tab_keywords, tab_cluste
 # ---------------------------------------------------------------------------
 with tab_snapshot:
     metrics = get_snapshot_metrics(selected_ticker)
-    with st.expander("🔧 Debug: raw metrics dict"):
-        st.write(metrics)
 
     # Hero header
     label = metrics.get("latest_sentiment_label")
