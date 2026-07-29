@@ -166,7 +166,7 @@ def get_snapshot_metrics(ticker):
     if df_clusters is not None:
         ticker_cluster = df_clusters[df_clusters["ticker"] == ticker]
         if not ticker_cluster.empty:
-            metrics["cluster_id"] = ticker_cluster.iloc[0]["cluster"]
+            metrics["cluster_id"] = int(ticker_cluster.iloc[0]["cluster"])
         else:
             metrics["cluster_id"] = None
 
